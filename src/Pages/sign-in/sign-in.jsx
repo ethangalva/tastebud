@@ -5,6 +5,7 @@ function SignInView(props) {
     return (
         <div className={styles.container}>
             <div className={styles.contents}>
+                {/* container for sign in form */}
                 <div className={styles.signInContainer}>
                     <form>
                         <h1>Welcome Back</h1>
@@ -21,17 +22,18 @@ function SignInView(props) {
                         <br />
                         <input type="submit" value="Sign in" />
                         <span>Not a member with us yet?</span>
-                        <button>Create an account</button>
+                        <button type='button'>Create an account</button>
                     </form>
                 </div>
+                {/* container for copyright text at bottom left */}
                 <div className={styles.copyright}>
                     <span>TasteBud ©</span>
                 </div>
+                {/* container for image and brand name at right of screen */}
                 <div className={styles.imageRegisterContainer}>
                     <div className={styles.image}>
                         <h1>TasteBud</h1>
                     </div>
-                    {/* <div className={styles.register}>qwfqw</div> */}
                 </div>
             </div>
         </div>
