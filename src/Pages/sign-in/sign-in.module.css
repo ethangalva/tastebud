@@ -1,0 +1,191 @@
+.container {
+    height: 100vh;
+    max-width: 100%;
+    width: 100%;
+    position: absolute;
+    /* background-image: url(../../Assets/Images/blob-scene-haikei.svg); */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.contents {
+    width: 95%;
+    height: 95vh;
+    border-radius: 1em;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    max-width: 1280px;
+}
+.contents > div {
+    width: 50%;
+}
+
+
+
+/* Container */
+.signInContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    flex-direction: column;
+    
+}
+
+
+
+/* form styling */
+form {
+    height: auto;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%
+} 
+form > h1 {
+    color: var(--color-black-4);
+    font-weight: 400;
+    font-size: 1.5em;
+    margin: 0px;
+}
+form > p {
+    font-size: .55em;
+    color: #5f5e5e;
+    margin: 0px;
+    padding-bottom: .5vh;
+}
+form > label {
+    /* border: 1px solid red; */
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-bottom: .5em;
+}
+form > label > span {
+    font-size: .55em;
+    font-weight: 600;
+    /* might remove */
+    margin: 0px;
+    padding: 0px;
+}
+form > label > input {
+    width: calc(100%-12px);
+    border: 0px;
+    padding: 0px;
+    max-width: 400px;
+    border-radius: 6px;
+    padding: 8px 6px;
+}
+form > label > input:focus {
+    border-color: var(--color-green-5);
+    outline: thin solid var(--color-green-5);
+    box-shadow: none
+}
+/* submit button */
+form > input {
+    background-color: var(--color-green-5);
+    width: 50%;
+    padding: 8px;
+    max-width: 400px;
+    color: white;
+    border-radius: 6px;
+    border: 0px;
+    font-size: .55em;
+    font-weight: 600;
+    outline: 1px solid var(--color-black-4);
+    margin-bottom: 8px;
+}
+form > span {
+    font-size: .5em;
+    margin-bottom: 8px;
+}
+
+form > button {
+    background-color: var(--color-black-4);
+    outline: 1px solid var(--color-black-4);
+    width: 50%;
+    padding: 8px;
+    max-width: 400px;
+    color: white;
+    border-radius: 6px;
+    border: 0px;
+    margin-bottom: 8px;
+    font-size: .55em;
+    font-weight: 600;
+}
+
+/* copyright */
+.copyright {
+    position: absolute;
+    bottom: 0;
+    padding-left: 5px;
+}
+.copyright > span {
+    font-family: var(--font-cursive);
+    font-size: .55em;
+}
+
+
+
+
+/* image */
+.imageRegisterContainer {
+    
+}
+.image {
+    background-image: url(../../Assets/Images/shaian-ramesht-exSEmuA7R7k-unsplash.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* -webkit-animation: slide-left 3s ease-out both;
+    animation: slide-left 3s ease-out both; */
+    position: relative;
+    z-index: 10;
+}
+.image > h1 {
+    font-family: var(--font-cursive);
+    color: var(--color-background-0);
+    margin: 0px;
+    text-shadow: 3px 3px var(--color-black-4);
+}
+@-webkit-keyframes slide-left {
+0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+}
+100% {
+    -webkit-transform: translateX(-100px);
+            transform: translateX(-100px);
+}
+}
+@keyframes slide-left {
+0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+}
+100% {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+}
+}
+
+.register {
+    position: absolute;
+}
+  
