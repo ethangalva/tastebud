@@ -47,7 +47,6 @@ is smaller than max width, there is still a padding on each side rather than non
     justify-content: center;
 }
 .messageContainer > div {
-    border: 1px solid red;
     width: 65%;   
 }
 .messageContainer > div > .title {
@@ -73,7 +72,8 @@ is smaller than max width, there is still a padding on each side rather than non
 
 
 
-
+/* last night: stayed on adding css to the form and button to submit the search for recepies:
+https://dribbble.com/shots/19558981-CELLA-AGRICULTURE-Website-Design */
 
 
 
