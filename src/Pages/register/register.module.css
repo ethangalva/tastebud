@@ -30,8 +30,8 @@
 
 
 
-/* container for the sign in elements */
-.signInContainer{
+/* container for the register elements */
+.registerContainer{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -111,13 +111,13 @@ form > input {
     margin-bottom: 8px;
 }
 
-/* not a member with us yet? text */
+/* already a member? text */
 form > span {
     font-size: .5em;
     margin-bottom: 8px;
 }
 
-/* create an account button */
+/* sign in button */
 form > button {
     background-color: var(--color-black-4);
     outline: 1px solid var(--color-black-4);

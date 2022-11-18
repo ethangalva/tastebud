@@ -2,12 +2,13 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import SignInView from './Pages/sign-in/sign-in';
+import RegisterView from './Pages/register/register';
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <SignInView />
+    <RegisterView />
   </React.StrictMode>
 );
 

@@ -1,15 +1,19 @@
-import styles from './sign-in.module.css'
-import '../../index.css'
+import styles from './register.module.css';
+import '../../index.css';
 
-function SignInView(props) {
+function RegisterView(props) {
     return (
         <div className={styles.container}>
             <div className={styles.contents}>
-                {/* container for sign in form */}
-                <div className={styles.signInContainer}>
+                {/* container for register form */}
+                <div className={styles.registerContainer}>
                     <form>
-                        <h1>Welcome Back</h1>
+                        <h1>Join our family!</h1>
                         <p>Please enter your details</p>
+                        <label>
+                            <span>Name:</span><br />
+                            <input type="text" name="Name" />
+                        </label>
                         <label>
                             <span>Email:</span><br />
                             <input type="text" name="Email" />
@@ -20,9 +24,9 @@ function SignInView(props) {
                             <input type="password" name="Password" />
                         </label>
                         <br />
-                        <input type="submit" value="Sign in" />
-                        <span>Not a member with us yet?</span>
-                        <button type='button'>Create an account</button>
+                        <input type="submit" value="Register" />
+                        <span>Already a member?</span>
+                        <button type='button'>Sign In</button>
                     </form>
                 </div>
                 {/* container for copyright text at bottom left */}
@@ -40,4 +44,4 @@ function SignInView(props) {
     )
 }
 
-export default SignInView;
+export default RegisterView;
