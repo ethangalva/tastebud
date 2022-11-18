@@ -31,7 +31,7 @@
 .brandName {
     font-family: var(--font-cursive);
     color: black;
-    text-shadow: 2px 2px var(--color-beige-1);
+    text-shadow: 2px 2px var(--color-yellow-6);
     font-size: 4vh;
 }
 

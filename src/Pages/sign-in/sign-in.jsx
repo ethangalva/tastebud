@@ -7,7 +7,7 @@ function SignInView(props) {
             <div className={styles.contents}>
                 {/* container for sign in form */}
                 <div className={styles.signInContainer}>
-                    <form>
+                    <form className={styles.form}>
                         <h1>Welcome Back</h1>
                         <p>Please enter your details</p>
                         <label>

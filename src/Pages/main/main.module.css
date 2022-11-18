@@ -17,9 +17,110 @@
     width: 100%;
     height: 100vh;
     display: flex;
-    justify-content: center;
-    flex-direction: row;
+    align-items: center;
+    flex-direction: column;
     position: relative;
-    max-width: 1440px;
+    max-width: 1280px;
+}
+.contents > div {
+    width: 100%;
 }
 
+/* mainPresentation for image and welcome text */
+.mainPresentation {
+    height: 80vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+/* Explanation: the reason between the separate paddings is so that when screen 
+is smaller than max width, there is still a padding on each side rather than none */
+.mainPresentation > div {
+    height: 100%;
+    padding: 0px 1.5%;
+}
+
+
+/* styling for text */
+.messageContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.messageContainer > div {
+    border: 1px solid red;
+    width: 65%;   
+}
+.messageContainer > div > .title {
+    font-family: var(--font-cursive);
+    font-size: 4.5vh;
+    text-shadow: 2px 2px var(--color-yellow-6);
+    line-height: 1.25em;
+}
+.messageContainer > div > .titleLegend {
+    font-weight: 600;
+    font-size: 2vh;
+}
+.messageContainer > div > .form {
+    padding-top: 2vh;
+    
+}
+.messageContainer > div > .form > label {
+    display: flex;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* styling for image */
+.imageContainer {
+    display: flex;
+    align-items: center;
+}
+.image {
+    background-image: url('../../Assets/Images/letuce-unsplash.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    height: 70%;
+    width: 60%;
+    border-bottom-left-radius: 7em;
+    border-bottom-right-radius: 1.5em;
+    border-top-left-radius: 6em;
+    border-top-right-radius: 6em;
+}
+.image > .imageCircle{
+    background-color: var(--color-yellow-6);
+    height: 12vh;
+    width: 12vh;
+    border-radius: 1000px;
+    position: absolute;
+    left: -12%;
+    bottom: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--font-cursive);
+    font-size: 3.25vh;
+}
+.image > .imageStars {
+    position: absolute;
+    left: -15%;
+    top: -5%;
+    transform: rotate(-25deg);
+}

@@ -7,7 +7,7 @@ function RegisterView(props) {
             <div className={styles.contents}>
                 {/* container for register form */}
                 <div className={styles.registerContainer}>
-                    <form>
+                    <form className={styles.form}>
                         <h1>Join our family!</h1>
                         <p>Please enter your details</p>
                         <label>
