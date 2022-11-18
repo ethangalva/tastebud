@@ -1,0 +1,50 @@
+.container {
+    height: 10vh;
+    width: 100%;
+    max-width: 1280px;
+}
+.contents {
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    text-align: center;
+    padding: 0px 1.5%;
+}
+
+/* styling for nav a's */
+.nav {
+    display: flex;
+    flex-direction: row;
+    gap: 5%;
+    font-weight: 600;
+    font-size: 2vh;
+}
+.nav > div > a {
+    color: var(--color-black-4);
+    text-decoration: none;
+}
+
+
+
+/* stying for brandName */
+.brandName {
+    font-family: var(--font-cursive);
+    color: black;
+    text-shadow: 2px 2px var(--color-beige-1);
+    font-size: 4vh;
+}
+
+
+/* styling for profile button */
+.profile {
+    display: flex;
+    justify-content: flex-end;
+}
+.profile > button {
+    border: 0px;
+    padding: 0px;
+    max-width: 400px;
+    border-radius: 6px;
+    background-color: transparent;
+}
