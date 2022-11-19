@@ -47,26 +47,48 @@ is smaller than max width, there is still a padding on each side rather than non
     justify-content: center;
 }
 .messageContainer > div {
-    width: 65%;   
+    width: 65%;
 }
 .messageContainer > div > .title {
     font-family: var(--font-cursive);
     font-size: 4.5vh;
-    text-shadow: 2px 2px var(--color-yellow-6);
+    text-shadow: 2px 2px var(--color-green-5);
     line-height: 1.25em;
 }
 .messageContainer > div > .titleLegend {
     font-weight: 600;
     font-size: 2vh;
 }
-.messageContainer > div > .form {
+.messageContainer > div > .formContainer {
     padding-top: 2vh;
     
 }
-.messageContainer > div > .form > label {
+.form > label {
     display: flex;
 }
+/* styling for form were user types a thing to look up */
+.form > label > input {
+    padding: 10px;
+    border-radius: 100px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    /* border: 2px solid var(--color-green-5); */
+    border: 0px;
+    box-shadow: -3px 3px 10px rgb(0 0 0 / 0.2);
 
+}
+.form > label > button {
+    border-radius: 100px;
+    border: 2px solid var(--color-green-5);
+    border-left: none;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    padding: 10px;
+    background-color: var(--color-green-5);
+    font-weight: 600;
+    box-shadow: -3px 3px 10px rgb(0 0 0 / 0.2);
+    color: white;
+}
 
 
 
