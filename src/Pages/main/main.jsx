@@ -25,6 +25,13 @@ function MainView(props) {
                                 </form>
                             </div>
                         </div>
+                        <div className={styles.messageIcons}>
+                            <div className={styles.one} />
+                            <div className={styles.two} />
+                            <div className={styles.three} />
+
+                            <div className={styles.button}>JOIN NOW</div>
+                        </div>
                     </div>
                     <div className={styles.imageContainer}>
                         <div className={styles.image}>

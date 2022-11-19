@@ -45,6 +45,8 @@ is smaller than max width, there is still a padding on each side rather than non
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
+    position: relative;
 }
 .messageContainer > div {
     width: 65%;
@@ -90,6 +92,62 @@ is smaller than max width, there is still a padding on each side rather than non
     color: white;
 }
 
+
+
+/* styling for messageIcons on the bottom of message container */
+.messageIcons {
+    position: absolute;
+    height: 10vh;
+    bottom: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: left;
+}
+.messageIcons > div {
+    height: 9vh;
+    width: 9vh;
+    border-radius: 1000px;
+    background-color: blue;
+    position: relative;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: -3px 3px 10px rgb(0 0 0 / 0.2);
+    outline: 3px solid var(--color-background-0);
+}
+/* messageIcons individual styling */
+.messageIcons > .one {
+    background-color: blueviolet;
+    background-image: url('../../Assets/Images/img-faces-users/one.jpg');
+
+}
+.messageIcons > .two {
+    background-color: cornflowerblue;
+    background-image: url('../../Assets/Images/img-faces-users/two.jpg');
+    right: 1vh;
+}
+.messageIcons > .three {
+    background-color: lightcoral;
+    background-image: url('../../Assets/Images/img-faces-users/three.jpg');
+    right: 2vh;
+}
+.messageIcons > .button {
+    border-radius: 100px;
+    border: 2px solid var(--color-green-5);
+    border-left: none;
+    padding: 10px;
+    background-color: var(--color-green-5);
+    font-weight: 600;
+    box-shadow: -3px 3px 10px rgb(0 0 0 / 0.2);
+    color: white;
+    height: 3vh;
+    width: auto;
+    font-size: 1.5vh;
+    display: flex;
+    align-items: center;
+    outline: none;
+}
 
 
 
