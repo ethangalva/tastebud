@@ -6,7 +6,7 @@
 .contents {
     height: 100%;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     align-items: center;
     text-align: center;
     padding: 0px 1.5%;
@@ -14,7 +14,7 @@
 
 /* styling for nav a's */
 .nav {
-    display: flex;
+    display: none;
     flex-direction: row;
     gap: 5%;
     font-weight: 600;
@@ -30,9 +30,11 @@
 /* stying for brandName */
 .brandName {
     font-family: var(--font-cursive);
-    color: black;
+    color: var(--color-black-4);
     text-shadow: 2px 2px var(--color-yellow-6);
     font-size: 4vh;
+    display: flex;
+    align-items: center;
 }
 
 
@@ -47,4 +49,19 @@
     max-width: 400px;
     border-radius: 6px;
     background-color: transparent;
+}
+
+@media screen and (min-width: 768px) {
+    /* shows nav in header */
+    .nav {
+        display: flex;
+    }
+    .contents {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    /* centers text on desktop view */
+    .brandName {
+        display: block;
+    }
 }

@@ -1,7 +1,7 @@
 import styles from './main.module.css'
 import '../../index.css'
 
-// import header from reusable module 
+// import header from reusable module
 import Header from '../../Components/header/header';
 
 function MainView(props) {
@@ -9,15 +9,17 @@ function MainView(props) {
         <div className={styles.container}>
             <div className={styles.contents}>
                 <Header />
+                {/* container for presentation section */}
                 <div className={styles.mainPresentation}>
+                    {/* #1 message container */}
                     <div className={styles.messageContainer}>
                         <div>
-                            <div className={styles.title}>Find new recipes with TasteBud</div>
+                            <div className={styles.title}>Find new recipes<br></br> with TasteBud</div>
                             <div className={styles.titleLegend}>the best bud to your tastebuds</div>
                             <div className={styles.formContainer}>
                                 <form className={styles.form}>
                                     <label>
-                                        <input placeholder='food in your mind?' type="text" name="Email" />
+                                        <input placeholder='recipe in mind?' type="text" name="Email" />
                                         <button>
                                             Search
                                         </button>
@@ -33,6 +35,7 @@ function MainView(props) {
                             <div className={styles.button}>JOIN NOW</div>
                         </div>
                     </div>
+                    {/* #2 image container */}
                     <div className={styles.imageContainer}>
                         <div className={styles.image}>
                             <div className={styles.imageCircle}>Hello!</div>
@@ -44,8 +47,14 @@ function MainView(props) {
                         </div>
                     </div>
                 </div>
+                {/* container for page content */}
+                <div className={styles.pageContent}>
+                    <div>hello</div>
+
+                </div>
             </div>
         </div>
     )
 }
+
 export default MainView;
