@@ -19,12 +19,15 @@ function MainView(props) {
                             <div className={styles.formContainer}>
                                 <form className={styles.form}>
                                     <label>
-                                        <input placeholder='recipe in mind?' type="text" name="Email" />
+                                        <input placeholder='Fancy something to eat?' type="text" name="Email" />
                                         <button>
                                             Search
                                         </button>
                                     </label>
                                 </form>
+                            </div>
+                            <div className={styles.paragraph}>
+                                Cupcake ipsum dolor sit amet apple pie cake. Biscuit cotton candy pudding liquorice cookie bonbon. Pie I love wafer caramels I love toffee.
                             </div>
                         </div>
                         <div className={styles.messageIcons}>
@@ -49,8 +52,36 @@ function MainView(props) {
                 </div>
                 {/* container for page content */}
                 <div className={styles.pageContent}>
-                    <div>hello</div>
-
+                    <div className={styles.pageContent_featuredTitle}>Featured Recipes</div>
+                    <div className={styles.pageContent_featuredQuote}>A recipe is a story that ends with a good meal.</div>
+                    <div className={styles.pageContent_featuredItem}>
+                        <div className={styles.featuredItem_image}>
+                            <div className={styles.featuredItem_actualImage_1} />
+                        </div>
+                        <div className={styles.featuredItem_title}>
+                            <div>Chicken Tikka Masala</div>
+                        </div>
+                    </div>
+                    <div className={styles.pageContent_featuredItem}>
+                        <div className={styles.featuredItem_image}>
+                            <div className={styles.featuredItem_actualImage_2} />
+                        </div>
+                        <div className={styles.featuredItem_title}>
+                            <div>Masala Fried Wings</div>
+                        </div>
+                    </div>
+                    <div className={styles.pageContent_featuredItem}>
+                        <div className={styles.featuredItem_image}>
+                            <div className={styles.featuredItem_actualImage_3} />
+                        </div>
+                        <div className={styles.featuredItem_title}>
+                            <div>Indian Chicken Cutlets</div>
+                        </div>
+                    </div>
+                    {/* call to action */}
+                    <div className={styles.featuredCTA}>
+                        <a>find new recipes</a>
+                    </div>
                 </div>
             </div>
         </div>

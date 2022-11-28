@@ -51,7 +51,7 @@ is smaller than max width, there is still a padding on each side rather than non
 }
 .messageContainer > div > .title {
     font-family: var(--font-cursive);
-    font-size: 4.5vh;
+    font-size: 5vh;
     text-shadow: 2px 2px var(--color-green-5);
     line-height: 1.25em;
 }
@@ -148,7 +148,11 @@ is smaller than max width, there is still a padding on each side rather than non
     text-align: center;
 }
 
-
+.paragraph {
+    font-size: .7em;
+    width: 75%;
+    display: none;
+}
 
 
 /* last night: stayed on adding css to the form and button to submit the search for recepies:
@@ -209,17 +213,106 @@ https://dribbble.com/shots/19558981-CELLA-AGRICULTURE-Website-Design */
 
 /* Page content */
 .pageContent {
-    border: 1px solid red;
     background-color: var(--color-beige-1);
-    border-radius: 1em;
     border-bottom-right-radius: 0px;
-    height: 80vh;
-    margin: 10vh 0vh;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
-    align-content: center;
+    justify-content: center;
 }
+
+/* styling for the featured recipes section */
+.pageContent_featuredTitle {
+    font-size: 5vh;
+    font-weight: 600;
+    text-align: center;
+}
+.pageContent_featuredQuote {
+    font-size: 2.5vh;
+    text-align: center;
+    width: 75%;
+    max-width: 375px;
+    margin-bottom: 1.5vh;
+}
+.pageContent_featuredItem {
+    width: 75%;
+    height: 22vh;
+    background-color: var(--color-background-0);
+    /* box-shadow: -3px 3px 10px rgb(0 0 0 / 0.2), 3px -3px 10px rgb(0 0 0 / 0.2); */
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    /* box-shadow: 3px -3px 10px rgb(0 0 0 / 0.2); */
+    border-radius: 1em;
+    margin: 1vh;
+    overflow: hidden;
+    backdrop-filter: blur(100px);
+    display: grid;
+    grid-template-areas: 
+    "image name"
+    "image name";
+}
+.featuredItem_image {
+    grid-area: image;
+    width: 100%;
+    height: 100%;
+    /* background-color: lightgoldenrodyellow; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.featuredItem_image > div {
+    height: 80%;
+    width: 80%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: .7em;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+/* image inside of the image container */
+.featuredItem_actualImage_1 {
+    background-image: url('../../Assets/Images/featured-recipes/featured-recipe-1.jpg');
+}
+.featuredItem_actualImage_2 {
+    background-image: url('../../Assets/Images/featured-recipes/featured-recipe-2.jpg');
+}
+.featuredItem_actualImage_3 {
+    background-image: url('../../Assets/Images/featured-recipes/featured-recipe-3.jpg');
+}
+
+
+.featuredItem_title { 
+    grid-area: name;
+    width: 100%;
+    height: 100%;
+    /* background-color: lightgoldenrodyellow; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.featuredItem_title > div {
+    position: absolute;
+    font-size: .7em;
+    text-align: center;
+    font-weight: 600;
+    padding-right: 1em;
+}
+
+/* Call to Action underneath the featured recipes */
+.featuredCTA {
+    font-size: .6em;
+    position: absolute;
+    bottom: 0;
+    padding-bottom: 2vh;
+    color: var(--color-yellow-6);
+    text-shadow: 1px black;
+}
+
+
+
+
+
+
 
 
 
