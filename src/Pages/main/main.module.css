@@ -20,7 +20,7 @@
     align-items: center;
     flex-direction: column;
     position: relative;
-    max-width: 1280px;
+    max-width: 1440px;
 }
 .contents > div {
     width: 100%;
@@ -31,7 +31,6 @@
     height: 80vh;
     display: grid;
     grid-template-columns: 1fr;
-    margin-bottom: 10vh;
 }
 /* Explanation: the reason between the separate paddings is so that when screen 
 is smaller than max width, there is still a padding on each side rather than none */
@@ -154,7 +153,6 @@ is smaller than max width, there is still a padding on each side rather than non
     display: none;
 }
 
-
 /* last night: stayed on adding css to the form and button to submit the search for recepies:
 https://dribbble.com/shots/19558981-CELLA-AGRICULTURE-Website-Design */
 
@@ -208,6 +206,7 @@ https://dribbble.com/shots/19558981-CELLA-AGRICULTURE-Website-Design */
 }
 
 
+/* styling for svg wave */
 
 
 
@@ -301,12 +300,10 @@ https://dribbble.com/shots/19558981-CELLA-AGRICULTURE-Website-Design */
 /* Call to Action underneath the featured recipes */
 .featuredCTA {
     font-size: .6em;
-    position: absolute;
-    bottom: 0;
-    padding-bottom: 2vh;
+    margin-top: 1vh;
     color: var(--color-yellow-6);
-    text-shadow: 1px black;
 }
+
 
 
 
@@ -325,4 +322,53 @@ https://dribbble.com/shots/19558981-CELLA-AGRICULTURE-Website-Design */
     .mainPresentation {
         grid-template-columns: 1fr 1fr;
     }
+}
+
+
+
+
+
+.buttonCTA {
+  align-items: center;
+  appearance: none;
+  background-color: var(--color-background-0);
+  border-radius: 4px;
+  border-width: 0;
+  box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,rgba(45, 35, 66, 0.3) 0 7px 13px -3px,#D6D6E7 0 -3px 0 inset;
+  box-sizing: border-box;
+  color: #36395A;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: "JetBrains Mono",monospace;
+  height: 36px;
+  justify-content: center;
+  line-height: 1;
+  list-style: none;
+  overflow: hidden;
+  padding-left: 16px;
+  padding-right: 16px;
+  position: relative;
+  text-align: left;
+  text-decoration: none;
+  transition: box-shadow .15s,transform .15s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  will-change: box-shadow,transform;
+  font-size: 18px;
+}
+
+.buttonCTA:focus {
+  box-shadow: #D6D6E7 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+}
+
+.buttonCTA:hover {
+  box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+  transform: translateY(-2px);
+}
+
+.buttonCTA:active {
+  box-shadow: #D6D6E7 0 3px 7px inset;
+  transform: translateY(2px);
 }
