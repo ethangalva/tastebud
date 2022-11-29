@@ -4,6 +4,7 @@ import '../../index.css'
 // import header from reusable module
 import Header from '../../Components/header/header';
 import Footer from '../../Components/footer/footer';
+import Placeholder from '../../Components/placeholder/placeholder';
 
 function App(props) {
     return(
@@ -28,7 +29,7 @@ function App(props) {
                         </form>
                     </div>
                     {/* RECIPE LOADING AND PLACEHOLDER GO HERE */}
-                    
+                    <Placeholder />
                 </div>
                 <Footer />
             </div>
