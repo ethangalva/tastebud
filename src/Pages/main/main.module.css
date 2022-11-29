@@ -305,10 +305,69 @@ https://dribbble.com/shots/19558981-CELLA-AGRICULTURE-Website-Design */
 }
 
 
-
-
-
-
+.pageContentAbout {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+/* TITLE */
+.aboutTitle {
+    font-weight: 600;
+    color: var(--color-black-4);
+    text-align: center;
+}
+/* tastebud in cursive */
+.aboutTitle > span {
+    font-family: var(--font-cursive);
+    text-shadow: 2px 2px var(--color-yellow-6);
+}
+/* MESSAGE */
+.aboutMessage {
+    color: var(--color-black-4);
+    text-align: center;
+    font-size: .65em;
+    font-weight: 400;
+    width: 90%;
+    padding-bottom: 1vh;
+}
+/* STATS */
+.stats {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 3vh;
+    align-items: center;
+}
+.statsItem {
+    height: 10vh;
+    /* border: 1px solid red; */
+    border-bottom: 1px solid black;
+    display: grid;
+    grid-template-columns: 1fr 1fr;  
+    width: 85%; 
+}
+/* actual stats cards */
+.statsItem_name {
+    display: flex;
+    align-items: flex-end;
+    padding-left: 6px;
+    padding-bottom: 6px;
+    font-size: .7em;
+}
+.statsItem_number {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    padding-right: 6px;
+    padding-bottom: 6px;
+    font-size: .7em;
+    font-weight: 500;
+}
+.pageContentAbout > button {
+    margin-top: 3vh;
+}
 
 
 

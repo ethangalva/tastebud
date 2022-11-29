@@ -87,9 +87,29 @@ function MainView(props) {
                 </div>
                 {/* blob under of the pageContent Section */}
                 <svg style={{position: "relative", bottom: "3px"}} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#e8dfca" fill-opacity="1" d="M0,192L26.7,192C53.3,192,107,192,160,176C213.3,160,267,128,320,122.7C373.3,117,427,139,480,154.7C533.3,171,587,181,640,160C693.3,139,747,85,800,80C853.3,75,907,117,960,122.7C1013.3,128,1067,96,1120,74.7C1173.3,53,1227,43,1280,37.3C1333.3,32,1387,32,1413,32L1440,32L1440,0L1413.3,0C1386.7,0,1333,0,1280,0C1226.7,0,1173,0,1120,0C1066.7,0,1013,0,960,0C906.7,0,853,0,800,0C746.7,0,693,0,640,0C586.7,0,533,0,480,0C426.7,0,373,0,320,0C266.7,0,213,0,160,0C106.7,0,53,0,27,0L0,0Z"></path></svg>
-                {/* <div className={styles.pageContentAbout}>
-                    <div className={styles.aboutTitle}>About Us</div>
-                </div> */}
+                <div className={styles.pageContentAbout}>
+                    <div className={styles.aboutTitle}>
+                        About <span>TasteBud</span>
+                    </div>
+                    <div className={styles.aboutMessage}>
+                        We focus on bringing new recipes and detailed information about their food to our members.
+                    </div>
+                    <div className={styles.stats}>
+                        <div className={styles.statsItem}>
+                            <div className={styles.statsItem_name}>one</div>
+                            <div className={styles.statsItem_number}>20M+</div>
+                        </div>
+                        <div className={styles.statsItem}>
+                            <div className={styles.statsItem_name}>two</div>
+                            <div className={styles.statsItem_number}>20M+</div>
+                        </div>
+                        <div className={styles.statsItem}>
+                            <div className={styles.statsItem_name}>three</div>
+                            <div className={styles.statsItem_number}>20M+</div>
+                        </div>
+                    </div>
+                    <button className={styles.buttonCTA}>Email Us!</button>
+                </div>
             </div>
         </div>
     )
