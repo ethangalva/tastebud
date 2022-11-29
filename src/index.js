@@ -4,12 +4,13 @@ import './index.css';
 import SignInView from './Pages/sign-in/sign-in';
 import RegisterView from './Pages/register/register';
 import MainView from './Pages/main/main';
+import App from './Pages/app/app';
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <MainView />
+    <App />
   </React.StrictMode>
 );
 

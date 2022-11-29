@@ -15,8 +15,8 @@ function MainView(props) {
                     {/* #1 message container */}
                     <div className={styles.messageContainer}>
                         <div>
-                            <div className={styles.title}>Find new recipes<br></br> with TasteBud</div>
-                            <div className={styles.titleLegend}>the best bud to your tastebuds</div>
+                            <div className={styles.title}>Find new recipes<br></br> with <span className={styles.titleTasteBud}>TasteBud</span></div>
+                            <div className={styles.titleLegend}>your tastebud's best bud</div>
                             <div className={styles.formContainer}>
                                 <form className={styles.form}>
                                     <label>

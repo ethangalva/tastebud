@@ -51,8 +51,10 @@ is smaller than max width, there is still a padding on each side rather than non
 .messageContainer > div > .title {
     font-family: var(--font-cursive);
     font-size: 5vh;
-    text-shadow: 2px 2px var(--color-green-5);
     line-height: 1.25em;
+}
+.messageContainer > div > div > span {
+    text-shadow: 2px 2px var(--color-yellow-6);
 }
 .messageContainer > div > .titleLegend {
     font-weight: 600;

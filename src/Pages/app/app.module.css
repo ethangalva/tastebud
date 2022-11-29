@@ -1,0 +1,22 @@
+.app {
+    padding: 0px .5em;
+}
+.title {
+    font-weight: 500;
+    font-size: 1.2em;
+}
+/* styling for form to look up recipes */
+.form > label > input {
+    width: 75%;
+    max-width: 400px;
+    background-color: var(--color-beige-1);
+    border: 0px;
+    border-radius: 100px;
+    padding: 10px;
+    box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 4px 0px inset;
+    /* box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px; */
+}
+.form > label > button {
+     padding: 0px;
+
+}
