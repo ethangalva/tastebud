@@ -96,19 +96,20 @@ function MainView(props) {
                     </div>
                     <div className={styles.stats}>
                         <div className={styles.statsItem}>
-                            <div className={styles.statsItem_name}>one</div>
-                            <div className={styles.statsItem_number}>20M+</div>
+                            <div className={styles.statsItem_name}>Recipes</div>
+                            <div className={styles.statsItem_number}>2,300,000+</div>
                         </div>
                         <div className={styles.statsItem}>
-                            <div className={styles.statsItem_name}>two</div>
-                            <div className={styles.statsItem_number}>20M+</div>
+                            <div className={styles.statsItem_name}>Members</div>
+                            <div className={styles.statsItem_number}>20,000+</div>
                         </div>
                         <div className={styles.statsItem}>
-                            <div className={styles.statsItem_name}>three</div>
-                            <div className={styles.statsItem_number}>20M+</div>
+                            <div className={styles.statsItem_name}>Team Members</div>
+                            <div className={styles.statsItem_number}>100+</div>
                         </div>
                     </div>
                     <button className={styles.buttonCTA}>Email Us!</button>
+                    
                 </div>
             </div>
         </div>
