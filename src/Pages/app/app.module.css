@@ -4,8 +4,13 @@
 .title {
     font-weight: 500;
     font-size: 1.2em;
+    margin-bottom: 1.5vh;
 }
 /* styling for form to look up recipes */
+.form > label {
+    display: flex;
+    flex-direction: row;
+}
 .form > label > input {
     width: 75%;
     max-width: 400px;
@@ -14,9 +19,27 @@
     border-radius: 100px;
     padding: 10px;
     box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 4px 0px inset;
-    /* box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px; */
+    position: relative;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
 }
 .form > label > button {
-     padding: 0px;
+     padding: 10px;
+     width: 25%;
+     left: -10px;
+     max-height: 36px;
+     border: 0px;
+     display: flex;
+     flex-direction: row;
+     justify-content: center;
+     align-items: center;
+     gap: 5%;
+     background-color: var(--color-green-5);
+     color: white;
+     font-weight: 600;
+     border-radius: 100px;
+     border-top-left-radius: 0px;
+     border-bottom-left-radius: 0px;
 
 }
+
