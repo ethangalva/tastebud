@@ -3,6 +3,7 @@ import '../../index.css'
 
 // import header from reusable module
 import Header from '../../Components/header/header';
+import Footer from '../../Components/footer/footer';
 
 function MainView(props) {
     return(
@@ -111,6 +112,7 @@ function MainView(props) {
                     <button className={styles.buttonCTA}>Email Us!</button>
                     
                 </div>
+                <Footer />
             </div>
         </div>
     )

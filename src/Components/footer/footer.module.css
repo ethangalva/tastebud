@@ -1,0 +1,48 @@
+.contents {
+    height: 30vh;
+    background-color: var(--color-black-4);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    color: var(--color-background-0);
+}
+.contents > div {
+    height: 100%;
+    display: flex;
+    padding: 0px .5em;
+}
+
+/* PERSONAL MESSAGE */
+.personalMessage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+/* ethangalva */
+.personalMessage_name {
+    font-family: var(--font-cursive);
+}
+.personalMessage_message {
+    font-weight: 500;
+    font-size: .5em;
+    text-align: center;
+}
+.personalMessage_icons {
+    display: flex;
+    flex-direction: row;
+    margin-top: 3vh;
+    gap: 1em;
+}
+
+
+
+/* FOOTER LINKS */
+.footerLinks {
+    font-size: .5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2vh;
+    align-items: center;
+}
